@@ -1,0 +1,80 @@
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/* ------------RESET-------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button {
+    outline: none;
+    border: none;
+}
+
+body,
+button,
+textarea,
+input {
+    font-family: $main-font;
+}
+
+body{
+    background: radial-gradient(#222, black) padding-box;
+    color: #2C3E50;
+    text-shadow: $small-shadow;
+}
+
+h1,h2,h3,h4 {
+  color: #007b8a;
+  text-shadow: $small-shadow;
+  font-weight: $font-medium;
+}
+
+/*CLASSES*/
+
+button {
+  background-color: #0000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, rgb(250, 112, 154) 0%, rgb(254, 225, 64) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+button i {
+  font-size: 1.5rem;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $container-color;
+}

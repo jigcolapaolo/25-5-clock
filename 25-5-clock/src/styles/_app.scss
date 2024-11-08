@@ -1,0 +1,140 @@
+@use "variables" as *;
+
+.clock {
+  height: 26rem;
+  width: 22rem;
+  border: 2px solid #0000;
+  border-radius: 1rem;
+  background: radial-gradient(
+        circle at 10% 20%,
+        rgb(161, 255, 206) 0%,
+        rgb(250, 255, 209) 90%
+      )
+      padding-box,
+    radial-gradient(
+        circle at 10% 20%,
+        rgb(243, 94, 131) 17.1%,
+        rgb(236, 212, 80) 89.7%
+      )
+      border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-section {
+  width: 100%;
+  height: 15%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-section {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.break-length-container {
+  div {
+    display: flex;
+    justify-content: space-evenly;
+
+    span {
+      text-align: center;
+      width: 2rem;
+    }
+  }
+}
+
+.session-length-container {
+  div {
+    display: flex;
+    justify-content: space-evenly;
+
+    span {
+      text-align: center;
+      width: 2rem;
+    }
+  }
+}
+
+.timer-section {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  border: 5px solid #0000;
+  border-radius: 1rem;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: radial-gradient(
+        circle at 10% 20%,
+        rgb(161, 255, 206) 0%,
+        rgb(250, 255, 209) 90%
+      )
+      padding-box,
+    radial-gradient(
+        circle at 10% 20%,
+        rgb(243, 94, 131) 17.1%,
+        rgb(236, 212, 80) 89.7%
+      )
+      border-box;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  time {
+    font-size: 4rem;
+  }
+
+  .glow-normal {
+    animation: glow 1s infinite;
+  }
+
+  .glow-fast {
+    animation: glow 0.4s infinite;
+  }
+
+  .glow-faster {
+    animation: glow 0.1s infinite;
+  }
+
+  .glow-idle {
+    text-shadow: 0 0 20px red;
+    color: red;
+  }
+}
+
+.timer-controls {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.4rem;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 0 red;
+  }
+  50% {
+    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red;
+    color: red;
+  }
+  100% {
+    text-shadow: 0 0 0 red;
+  }
+}
