@@ -5,6 +5,7 @@ import { Timer } from "./components/Timer";
 import { TIMER_ACTION } from "./lib/consts";
 import { TimerAction } from "./lib/types";
 
+
 export const App = () => {
   const [breakValue, setBreakValue] = useState(5);
   const [sessionValue, setSessionValue] = useState(25);
@@ -17,7 +18,7 @@ export const App = () => {
   const handlePlayStop = () => {
     if (!isClockRunning) {
       setIsClockRunning(true);
-      timerRef.current = setInterval(() => {
+      timerRef.current = window.setInterval(() => {
         setSeconds((prevSeconds) => {
           if (prevSeconds === 0) {
             const audio = document.getElementById("beep") as HTMLAudioElement;
