@@ -1,40 +1,40 @@
-# 25 + 5 Clock <img src="https://github.com/user-attachments/assets/5dc31577-561e-4a98-baa3-3483a7fe9c28" alt="App Logo" width="50" height="50" />
+# 25 + 5 Clock <img src="https://github.com/user-attachments/assets/5dc31577-561e-4a98-baa3-3483a7fe9c28" alt="App Logo" width="45" height="45" />
 <br>
-<img src="https://github.com/user-attachments/assets/5436dfb8-d371-4d05-ae60-cf63e7c01cd2" alt="App Img" width="300" height="300" />
+<img src="https://github.com/user-attachments/assets/5436dfb8-d371-4d05-ae60-cf63e7c01cd2" alt="App Img" width="250" height="300" />
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
 - **Framework:** React
-- **Lenguaje:** TypeScript
-- **Estilos:** SCSS
+- **Language:** TypeScript
+- **Styles:** SCSS
 - **Testing:** Playwright (end-to-end)
 - **Linter:** ESLint
 
-## 📚 Instalación y Configuración
+## 📚 Installation and Setup
 
-Sigue estos pasos para instalar y ejecutar el proyecto en tu entorno local.
+Follow these steps to install and run the project in your local environment.
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ````
 git clone https://github.com/jigcolapaolo/25-5-clock.git
 ````
 
-### 2. Instalar dependencias
+### 2. Install dependencies
 
 ```
 npm install
 ````
 
-### 3. Ejecutar la aplicación
+### 3. Run the application
 
-Para ejecutar el proyecto en modo desarrollo:
+To run the project in development mode:
 
 ````
 npm run dev
 ````
 
-Para construir y ejecutar en modo producción:
+To build and run in production mode:
 
 ````
 npm build
@@ -43,15 +43,15 @@ npm start
 
 ## 🧪 Tests
 
-La app incluye tests de extremo a extremo (E2E) con configuraciones específicas para Playwright.
+The app includes end-to-end (E2E) tests with specific configurations for Playwright.
 
-### Ejecutar Tests E2E con Playwright
+### Run E2E Tests with Playwright
 
-1. Usa el siguiente comando para ejecutar todos los tests de Playwright:
+1. Use the following command to run all Playwright tests:
 ````
 npx playwright test
 ````
-Opcional con UI:
+Optional with UI:
 ````
 npx playwright test --ui
 ````
